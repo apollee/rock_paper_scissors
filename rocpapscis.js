@@ -1,16 +1,16 @@
 function computerPlay(){
 	let computerChoice;
-        let playNumber = Math.random();
+    let playNumber = Math.random();
         
-        if(playNumber <= 0.33){
-       	    computerChoice = "rock";
-        }
-        else if(playNumber <= 0.66){
-            computerChoice = "paper";
-        }
-        else{
-            computerChoice = "scissors";
-        }
+    if(playNumber <= 0.33){
+        computerChoice = "rock";
+    }
+    else if(playNumber <= 0.66){
+        computerChoice = "paper";
+    }
+    else{
+        computerChoice = "scissors";
+    }
     return computerChoice;
 }
         
