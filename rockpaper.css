@@ -4,7 +4,7 @@
 
 body{
   margin: 0%;
-  padding; 0%;
+  padding: 0%;
 }
 
 h1{
@@ -26,9 +26,9 @@ button {
   font-family: 'Saira Extra Condensed';
   color: #004d99;
   font-size: 185%;
-  width: 20%;
+  width: 5%;
   margin: 0 auto;
-  left: 38%;
+  left: 46%;
   bottom: 15%;
 }
 
