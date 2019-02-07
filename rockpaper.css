@@ -28,8 +28,9 @@ button {
   font-size: 185%;
   width: 5%;
   margin: 0 auto;
-  left: 46%;
+  right: 48%;
   bottom: 15%;
+  min-width: 100px;
 }
 
 button:hover{
