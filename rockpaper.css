@@ -1,35 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
 body{
-  margin: 0px;
-  padding; 0px;
+  margin: 0%;
+  padding; 0%;
 }
 
 h1{
   font-family: 'Saira Extra Condensed';
   text-align: center;
-  font-size: 100px;
-  margin: 35px;
+  font-size: 500%; 
 }
 
 img {
   position: fixed;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 button {
-  position: fixed;
-  top: 65%;
-  left: 47%;
+  position: absolute;
   border: 3px solid #004d99;
   font-family: 'Saira Extra Condensed';
   color: #004d99;
-  padding: 10px 40px;
-  font-size: 30px;
+  font-size: 185%;
+  width: 20%;
+  margin: 0 auto;
+  left: 38%;
+  bottom: 15%;
 }
 
 button:hover{
   border: 3px solid #cc5200;
   color: white;
   background-color: #004d99;
+}
+
+div{
+  text-align: center;
 }
