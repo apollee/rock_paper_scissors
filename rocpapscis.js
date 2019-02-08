@@ -15,7 +15,7 @@ function computerPlay(){
 }
         
 function playerPlay(){
-    let = playerChoice = window.prompt("Choose between rock, paper or scissors","rock");
+    let playerChoice = window.prompt("Choose between rock, paper or scissors","rock");
     return playerChoice;
 }
         
