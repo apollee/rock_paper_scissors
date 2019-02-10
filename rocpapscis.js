@@ -13,13 +13,12 @@ function computerPlay(){
     }
     return computerChoice;
 }
-        
+
 function playerPlay(){
     let playerChoice = window.prompt("Choose between rock, paper or scissors","rock");
     return playerChoice;
 }
-        
-        
+
 function playRound(playerChoice, computerChoice){
     if(playerChoice == computerChoice){
         return "It's a tie! No one wins";
@@ -33,26 +32,30 @@ function playRound(playerChoice, computerChoice){
         return "You lose this round! " + computerChoice +  " beats " + playerChoice + " .";
     }
 }
-        
-function game(){
-    let numberGames = 0;
-    let playWins = 0;
-    while(numberGames != 5) {
-        let compChoice = computerPlay();
-        let playChoice = playerPlay();
-        let result = playRound(playChoice, compChoice);
-        console.log(result);
-        if(result.substring(4,7) == "win"){
-            playWins++;
-        }
-        numberGames++;
-    } 
-    if(playWins >= 3){
-        return "You won the game! The results were " + playWins.toString() + " - " + (5 - playWins).toString();
-    }
-    else{
-        return "You lost the game! The results were " + playWins.toString() + " - " + (5 - playWins).toString();
-    }
+
+function deleteButtonPlay(){
+  document.getElementById("buttonPlay").style.visibility = "hidden";
 }
 
-console.log(game());
+function deleteImagePutin(){
+  document.getElementById("putinTrump").style.visibility = "hidden";
+}
+
+function createButton(option){
+  var newButton = document.createElement("button");
+  var textButton = document.createTextNode(option);     
+  newButton.appendChild(textButton);     
+  newButton.id = "button" + option;
+  document.body.appendChild(newButton); 
+}
+
+function textChoose(){
+  var paragraph = document.createElement("h2");
+  var text = document.createTextNode("MAKE YOUR MOVE");
+  paragraph.appendChild(text);
+  document.body.appendChild(paragraph);
+}
+
+deleteImagePutin();
+textChoose();
+createButton("ROCK");
