@@ -13,6 +13,12 @@ h1{
   font-size: 500%; 
 }
 
+h2{
+  font-family: 'Saira Extra Condensed';
+  font-size: 250%; 
+  text-align: center;
+}
+
 img {
   position: fixed;
   top: 50%;
@@ -20,20 +26,21 @@ img {
   transform: translate(-50%, -50%);
 }
 
-button {
+#buttonPlay {
   position: absolute;
   border: 3px solid #004d99;
   font-family: 'Saira Extra Condensed';
   color: #004d99;
   font-size: 185%;
-  width: 5%;
   margin: 0 auto;
-  right: 48%;
+  width: 5%;
   bottom: 15%;
+  margin: 0 auto;
   min-width: 100px;
+  right: 48%;
 }
 
-button:hover{
+#buttonPlay:hover{
   border: 3px solid #cc5200;
   color: white;
   background-color: #004d99;
@@ -41,4 +48,19 @@ button:hover{
 
 div{
   text-align: center;
+}
+
+#buttonROCK {
+  position: absolute;
+  border: 3px solid #004d99;
+  font-family: 'Saira Extra Condensed';
+  color: #004d99;
+  font-size: 185%;
+  margin: 0 auto;
+  width: 20%;
+  height: 20%;
+  left: 10%;
+  bottom: 35%;
+  min-width: 100px;
+  right: 48%;
 }
