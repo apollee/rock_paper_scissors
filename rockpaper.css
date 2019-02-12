@@ -15,7 +15,7 @@ h1{
 
 h2{
   font-family: 'Saira Extra Condensed';
-  font-size: 250%; 
+  font-size: 275%; 
   text-align: center;
 }
 
@@ -50,17 +50,32 @@ div{
   text-align: center;
 }
 
-#buttonROCK {
+.buttonChoice {
   position: absolute;
-  border: 3px solid #004d99;
+  border: 6px solid #004d99;
   font-family: 'Saira Extra Condensed';
   color: #004d99;
-  font-size: 185%;
-  margin: 0 auto;
+  font-size: 300%;
   width: 20%;
-  height: 20%;
-  left: 10%;
-  bottom: 35%;
-  min-width: 100px;
-  right: 48%;
+  height: 30%;
+  width: 20%;
+  bottom: 25%;
+}
+
+.buttonChoice:hover{
+  border: 6px solid #004d99;
+  color: white;
+  background-color: #cc5200;
+}
+
+#buttonROCK {
+  left: 15%;
+}
+
+#buttonPAPER {
+  left: 40%;
+}
+
+#buttonSCISSORS {
+  left: 65%;
 }
