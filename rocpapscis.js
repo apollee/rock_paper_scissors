@@ -46,9 +46,9 @@ function playRound(playerChoice, computerChoice){
     if(playerChoice == computerChoice){
         return "TIE";
     }
-    else if((playerChoice == "rock" && computerChoice == "scissors") ||
-    (playerChoice == "paper" && computerChoice == "rock") ||
-    (playerChoice == "scissors" && computerChoice == "paper")) {
+    else if((playerChoice == "ROCK" && computerChoice == "SCISSORS") ||
+    (playerChoice == "PAPER" && computerChoice == "ROCK") ||
+    (playerChoice == "SCISSORS" && computerChoice == "PAPER")) {
         return "PLAYER";
     }
     else{
