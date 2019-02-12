@@ -1,5 +1,5 @@
 function computerPlay(){
-    let selection = ['ROCK', 'PAPER', 'SCISSORS'];
+    let selection = ["ROCK", "PAPER", "SCISSORS"];
     let randomInt = Math.floor(Math.random() * 3);
     return selection[randomInt];
 }
@@ -124,7 +124,6 @@ function winner(result){
   }else{
       var text = document.createTextNode("OH...THATS A TIE");
   }
-  
   winnerGame.id = "winnerT";
   winnerGame.appendChild(text);
   document.body.appendChild(winnerGame);
