@@ -63,7 +63,18 @@ function deleteHome(){
   createButton("ROCK");
   createButton("PAPER");
   createButton("SCISSORS");
+  addEventListenerButtons();
 }
+
+function addEventListenerButtons(){
+  var rock = document.getElementById("buttonROCK");
+  rock.addEventListener('click', choiceRock); 
+  var paper = document.getElementById("buttonPAPER");
+  paper.addEventListener('click', choicePaper);
+  var scissors = document.getElementById("buttonSCISSORS");
+  scissors.addEventListener('click', choiceScissors);
+}
+
 
 function deleteButtonPlay(){
   document.getElementById("buttonPlay").style.visibility = "hidden";
@@ -115,17 +126,15 @@ function finalChoices(playerMove, computerMove){
 }
 
 function winner(result){
-  /*does calculations*/
   var winnerGame = document.createElement("h2"); 
-  /*if(playerWins){
+  if(result == "PLAYER"){
       var text = document.createTextNode("CONGRATULATIONS, YOU WON!");
-  }else if(computerWins){
+  }else if(result == "COMPUTER"){
       var text = document.createTextNode("...I GUESS THE COMPUTER IS SMARTER, YOU LOST!");  
   }else{
       var text = document.createTextNode("OH...THATS A TIE");
   }
-  */
-  var text = document.createTextNode("...I GUESS THE COMPUTER IS SMARTER, YOU LOST!");
+  
   winnerGame.id = "winnerT";
   winnerGame.appendChild(text);
   document.body.appendChild(winnerGame);
@@ -133,22 +142,9 @@ function winner(result){
 
 function game(){
   var btn = document.getElementById("buttonPlay");
-  btn.addEventListener('click', deleteHome);  
+  btn.addEventListener('click', deleteHome);    
 }
 
-
 game();
-
-
-/*deleteButtonPlay();
-deleteImagePutin();
-textChoose();
-createButton("ROCK");
-createButton("PAPER");
-createButton("SCISSORS");
-deleteButtonsChoice();
-deleteMakeMoveT();
-finalChoices("ROCK", "SCISSORS");
-winner("ROCK", "SCISSORS");*/
 
 
