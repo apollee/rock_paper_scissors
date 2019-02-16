@@ -46,6 +46,26 @@ img {
   background-color: #004d99;
 }
 
+#buttonAgain {
+    position: absolute;
+  border: 3px solid #004d99;
+  font-family: 'Saira Extra Condensed';
+  color: #004d99;
+  font-size: 185%;
+  margin: 0 auto;
+  width: 5%;
+  bottom: 10%;
+  margin: 0 auto;
+  min-width: 100px;
+  right: 48%;
+}
+
+#buttonAgain:hover{
+  border: 3px solid #cc5200;
+  color: white;
+  background-color: #004d99;
+}
+
 div{
   text-align: center;
 }
