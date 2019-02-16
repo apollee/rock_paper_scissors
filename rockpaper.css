@@ -54,10 +54,11 @@ img {
   font-size: 185%;
   margin: 0 auto;
   width: 10%;
-  bottom: 26%;
+  bottom: 20%;
   margin: 0 auto;
   min-width: 100px;
   right: 45%;
+  height: 10%;
 }
 
 #buttonAgain:hover{
