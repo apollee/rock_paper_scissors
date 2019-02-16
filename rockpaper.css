@@ -47,14 +47,14 @@ img {
 }
 
 #buttonAgain {
-    position: absolute;
+  position: absolute;
   border: 3px solid #004d99;
   font-family: 'Saira Extra Condensed';
   color: #004d99;
   font-size: 185%;
   margin: 0 auto;
   width: 5%;
-  bottom: 10%;
+  bottom: 12%;
   margin: 0 auto;
   min-width: 100px;
   right: 48%;
