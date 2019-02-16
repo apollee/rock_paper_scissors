@@ -93,6 +93,15 @@ function createButton(option){
   document.body.appendChild(newButton); 
 }
 
+function createButtonPlayAgain(){
+  var newButton = document.createElement("button");
+  var textButton = document.createTextNode("PLAY AGAIN");
+  newButton.appendChild(textButton);
+  newButton.id = "buttonAgain";
+  document.body.appendChild(newButton);
+  return newButton;
+}
+
 function textChoose(){
   var paragraph = document.createElement("h2");
   var text = document.createTextNode("MAKE YOUR MOVE");
@@ -127,6 +136,12 @@ function winner(result){
   winnerGame.id = "winnerT";
   winnerGame.appendChild(text);
   document.body.appendChild(winnerGame);
+  var button = createButtonPlayAgain();
+  button.addEventListener('click', playAgain);
+}
+
+function playAgain(){
+  window.location.reload(true);
 }
 
 function game(){
