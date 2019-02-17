@@ -1,7 +1,7 @@
 function computerPlay(){
-    let selection = ["ROCK", "PAPER", "SCISSORS"];
-    let randomInt = Math.floor(Math.random() * 3);
-    return selection[randomInt];
+  let selection = ["ROCK", "PAPER", "SCISSORS"];
+  let randomInt = Math.floor(Math.random() * 3);
+  return selection[randomInt];
 }
 
 function choiceRock(){
@@ -33,17 +33,17 @@ function choiceScissors(){
 
 
 function playRound(playerChoice, computerChoice){
-    if(playerChoice == computerChoice){
-        return "TIE";
-    }
-    else if((playerChoice == "ROCK" && computerChoice == "SCISSORS") ||
-    (playerChoice == "PAPER" && computerChoice == "ROCK") ||
-    (playerChoice == "SCISSORS" && computerChoice == "PAPER")) {
-        return "PLAYER";
-    }
-    else{
-        return "COMPUTER";
-    }
+  if(playerChoice == computerChoice){
+    return "TIE";
+  }
+  else if((playerChoice == "ROCK" && computerChoice == "SCISSORS") ||
+  (playerChoice == "PAPER" && computerChoice == "ROCK") ||
+  (playerChoice == "SCISSORS" && computerChoice == "PAPER")) {
+    return "PLAYER";
+  }
+  else{
+    return "COMPUTER";
+  }
 }
 
 function deleteHome(){
