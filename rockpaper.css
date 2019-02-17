@@ -2,21 +2,25 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   margin: 0%;
   padding: 0%;
 }
 
-h1{
+h1 {
   font-family: 'Saira Extra Condensed';
   text-align: center;
   font-size: 500%; 
 }
 
-h2{
+h2 {
   font-family: 'Saira Extra Condensed';
   font-size: 275%; 
   text-align: center;
+}
+
+#winnerT {
+  color: #cc5200;
 }
 
 img {
@@ -40,7 +44,7 @@ img {
   right: 48%;
 }
 
-#buttonPlay:hover{
+#buttonPlay:hover {
   border: 3px solid #cc5200;
   color: white;
   background-color: #004d99;
@@ -61,13 +65,13 @@ img {
   height: 10%;
 }
 
-#buttonAgain:hover{
+#buttonAgain:hover {
   border: 3px solid #cc5200;
   color: white;
   background-color: #004d99;
 }
 
-div{
+div {
   text-align: center;
 }
 
@@ -83,7 +87,7 @@ div{
   bottom: 25%;
 }
 
-.buttonChoice:hover{
+.buttonChoice:hover {
   border: 6px solid #004d99;
   color: white;
   background-color: #cc5200;
